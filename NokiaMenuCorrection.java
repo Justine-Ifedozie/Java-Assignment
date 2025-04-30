@@ -193,7 +193,6 @@ public class NokiaMenuCorrection { //Opening class braces
 		6. Change access codes 
 			""";
 //11 Clock lists
-	          int clock = 0;
 	       String cLock = """
 		Clock
 
@@ -437,10 +436,45 @@ public class NokiaMenuCorrection { //Opening class braces
 				} //Switch  closing braces
 		} //Case six closing brace
 
-		case 7: 
+		case 7: { // Call divert opening case
+			System.out.println("Call divert"); break;
+				} //Call divert closing braces
 
+		case 8: { //case eight opening brace
+			System.out.println("Games"); break;
+		} //Case eight closing brace
 
+		case 9: { //case nine opening brace
+			System.out.println("Calculator"); break;
+		} //Case nine closing brace
 
+		case 10: { //case ten opening brace
+			System.out.println("Reminders"); break;
+		} //Case ten closing brace
+
+		case 11: { //case eleven opening brace
+			System.out.print(cLock);
+			System.out.print("Press a number to make a selection: ");
+			int clock = keyboardInput.nextInt();
+
+			         switch (clock) { //Switch  opening braces
+			        	case 1: System.out.println("Alarm clock"); break;
+			       	case 2: System.out.println("Clock settings"); break;
+			     	case 3: System.out.println("Date setting"); break;
+			  	case 4: System.out.println("Stopwatch"); break;
+			       	case 5: System.out.println("Countdown timer"); break;
+			     	case 6: System.out.println("Auto update of date and time"); break;
+				default: break;
+				} //Switch  closing braces
+		} //Case eleven closing brace
+
+		case 12: { //case twelve opening brace
+			System.out.println("Profiles"); break;
+		} //Case twelve closing brace
+
+		case 13: { //case thirteen opening brace
+			System.out.println("SIM services"); break;
+		} //Case thirteen closing brace
 
 			} //Menu switch closing braces
 
